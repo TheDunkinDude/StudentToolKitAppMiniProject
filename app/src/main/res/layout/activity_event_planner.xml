@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbkg"
+    tools:context=".event_planner">
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="326dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="45dp"
+        android:ems="10"
+        android:hint="Event Name"
+        android:background="#66E8C5C5"
+        android:inputType="text"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Add"
+        android:layout_width="230dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="96dp"
+        android:background="#00BCD4"
+        android:text="Add Event"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="409dp"
+        android:layout_height="292dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Add">
+
+        <TextView
+            android:id="@+id/EventView"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="#00BCD4"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/eventView"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="#00BCD4"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/eventView2"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="#00BCD4"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/eventView3"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="#00BCD4"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/eventView4"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="#00BCD4"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/Return"
+        android:layout_width="44dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:background="#00BCD4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edit"
+        app:srcCompat="@drawable/baseline_keyboard_return_24" />
+
+    <ImageButton
+        android:id="@+id/Edit"
+        android:layout_width="42dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:background="#00BCD4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:srcCompat="@drawable/baseline_edit_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

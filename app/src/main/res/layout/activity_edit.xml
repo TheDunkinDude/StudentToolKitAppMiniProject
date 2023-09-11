@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbkg"
+    tools:context=".edit">
+
+    <EditText
+        android:id="@+id/Deleteinp"
+        android:layout_width="288dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="198dp"
+        android:layout_marginEnd="62dp"
+        android:ems="10"
+        android:background="#AEF3E8E8"
+        android:hint="The Event You want to Delete"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Send"
+        android:layout_width="225dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="88dp"
+        android:background="#517CED"
+        android:text="Delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Deleteinp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
